@@ -23,7 +23,7 @@ This information is sent automatically to the ground APIREST module in the case 
 
 Before starting with the installation, make sure you have the following software installed on your system:
 
-- Python 3.7
+- Python 3.7, use version 3.7.6 if you have any problem with others.
 - MongoDB Community Edition
 - MongoDB Database Tools
 - MongoDB Compass (optional, but recommended for easier database management)
@@ -48,11 +48,13 @@ To be able to create Docker images and upload them to Docker Hub, Docker Desktop
 To run and contribute, clone this repository to your local machine and install the requirements.  This set up is as same the one which is used with the ground backend, and the idea is to be able to simulate the APIREST module in a local environment, before uploading all the files into de RPi and executing them in a production environment.
     
 To run the APIREST on localhost for simulation, you must edit the run/debug configuration in PyCharm, as shown in the image, in order to pass the required arguments to the script. 
-You will need to change the Script path to Module name and input _uvicorn_, as well as adding the following parameters: _main:app --reload_.
+You will need to change the Script path to Module name and input _uvicorn_, as well as adding the following parameters: _main:app --reload --port 9000_
 
-![image](https://github.com/Frixon21/RestApiDEE/assets/72676967/e34bd344-ee58-4d86-b2ba-dc65c5d5c117)
+![image](https://github.com/eloimoncho/AirAPIREST/assets/91852608/a7d574a9-e187-44c8-a822-921657ab9193)
 
-![image](https://github.com/Frixon21/RestApiDEE/assets/72676967/d8c9e3e4-b2a8-4df5-be1f-376d070fe58d)
+
+![image](https://github.com/eloimoncho/AirAPIREST/assets/91852608/9aa0c00e-3104-4c8b-b2e4-d459eaa85a51)
+
 
 ## RPi set up
 
